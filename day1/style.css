@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  width: 70vw;
+}
+
+.pannel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+  border-radius: 50px;
+  margin: 5px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  flex: 0.5;
+}
+
+.title {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0;
+}
+
+.pannel.active {
+  flex: 5;
+}
+
+.pannel.active .title {
+  opacity: 1;
+}
+.maintitle {
+  position: absolute;
+  top: 10px;
+}
